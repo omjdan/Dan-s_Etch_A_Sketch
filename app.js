@@ -23,6 +23,7 @@ container.appendChild(grid)
          classPicked = btn.innerText;
 
         })
+      
     })
 
 
@@ -30,8 +31,9 @@ container.appendChild(grid)
 
 document.querySelectorAll('.reset').forEach(itm => {
    itm.addEventListener('mouseover', e => {
-itm.classList.remove('reset')
+itm.removeAttribute('class')
     itm.classList.add(classPicked)
+    
 })
 })
 
@@ -46,7 +48,7 @@ itm.classList.add('reset')
 })
 
 
-// Random color  picker and hover even Listener
+// Random color  picker and hover event Listener
 let ranColor = () => document.querySelectorAll('.reset').forEach(item =>{
 item.addEventListener('mouseover', e =>{let randomClass = () =>{
     let newCls;
@@ -67,6 +69,10 @@ item.classList.add(randomClass())
 })
 })
 
-randomBtn.addEventListener('click', ranColor())
+
+randomBtn.addEventListener('click', () =>{
+    ranColor() 
+})
+
 
 
