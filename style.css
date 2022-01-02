@@ -20,11 +20,16 @@ button {
     display: grid;
     grid-template-columns: repeat(64, 0.5fr);
     grid-template-rows: repeat(64, 0.5fr);
-    background-color: black;
-    border: solid white;
-  
-     
-
+    background-color: black(238, 24, 24);
+    border: ouset red(15, 8, 8, 0.924);
+max-width: 30%;
+max-height: 30%;
+overflow: hidden;
+     row-gap: none;
+column-gap: none;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
 
 }
 
@@ -32,7 +37,7 @@ button {
     background-color:black;
     height: 2px;
     width: 2px;
-    margin: 1px;
+
     border: outset 1px;
     border-color: darkslategray;
     padding: 1px;
@@ -43,7 +48,7 @@ button {
     background-color: green;
     height: 2px;
     width: 2px;
-    margin: 1px;
+    
     border: outset 1px;
     border-color: darkslategray;
     padding: 1px;
@@ -52,7 +57,7 @@ button {
     background-color:yellow;
     height: 2px;
     width: 2px;
-    margin: 1px;
+   
     border: outset 1px;
     border-color: darkslategray;
     padding: 1px;
@@ -61,7 +66,7 @@ button {
     background-color:rgb(17, 207, 255);
     height: 2px;
     width: 2px;
-    margin: 1px;
+    
     border: outset 1px;
     border-color: darkslategray;
     padding: 1px;
@@ -71,7 +76,6 @@ button {
     background-color: antiquewhite;
     height: 2px;
     width: 2px;
-    margin: 1px;
     border: outset 1px;
     border-color: darkslategray;
     padding: 1px;

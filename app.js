@@ -4,6 +4,9 @@ let classPicked;
 let randomBtn = document.querySelector('.random')
 
 
+randomBtn.addEventListener('click', () =>{
+    ranColor(); once: true;
+})
 
 
 //creates divs
@@ -19,7 +22,9 @@ container.appendChild(grid)
  document.querySelectorAll('.button').forEach(
     btn => {
         btn.addEventListener('click', e => {
-
+            randomBtn.removeEventListener('click', () =>{
+                ranColor(); once: true;
+            })
          classPicked = btn.innerText;
 
         })
@@ -70,9 +75,6 @@ item.classList.add(randomClass())
 })
 
 
-randomBtn.addEventListener('click', () =>{
-    ranColor() 
-})
 
 
 
